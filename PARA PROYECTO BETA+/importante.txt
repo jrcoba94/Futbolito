@@ -1,0 +1,11 @@
+falta poner el limpiar campos en algunos  load
+
+fata checar ortografia
+
+faltan algunas vistas 
+
+ponerle la imagen de bote de basura al botn eliminar (solocambiar la imagen)
+
+y falto el reporte de ligas 
+
+mas detalles que ballan saliendo

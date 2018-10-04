@@ -1,0 +1,191 @@
+/* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+/* end */
+
+/* custom theme */
+
+header {
+	min-height:230px;
+  	margin-bottom:5px;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+      position: static;
+  }
+  
+  #sidebar.affix {
+      position: fixed;
+      top: 0;
+      width:21.2%;
+  }
+}
+
+.affix,.affix-top {
+   position:static;
+}
+
+/* theme */
+
+body {
+  color:#828282;
+  background-color:#eee;
+}
+
+a,a:hover {
+	color:#0d0101;
+  	text-decoration:none;
+}
+
+.highlight-bk {
+	background-color:#ff3333;
+    padding:1px;
+    width:100%;
+}
+
+.highlight {
+	color:#0d0101;
+}
+  
+h3.highlight  {    /*color de letras de titulo y barra*/
+	padding-top:13px;
+    padding-bottom:14px;
+  	border-bottom:2px solid #0d0101;
+}
+
+.navbar {
+	background-color:#0e0101;
+  	color:#ffffff;
+    border:0;
+  	border-radius:0;
+}
+.navbar-nav > li > a {
+  	color:#faf5f5;
+  	padding-left:20px;
+  	padding-right:20px;
+  	border-left:1px solid #fcf7f7;
+}
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    color:#666666; 
+}
+.navbar-nav > li:last-child > a {
+  	border-right:1px solid #faf5f5;
+}
+.navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+	color: #f0f0f0;
+	background-color:transparent;
+  	opacity:.9;
+    border-color:#ff3333;
+}
+
+.nav .open > a {
+    border-color:#777777;
+    border-width:0;
+}
+
+.accordion-group 
+{
+	border-width:0;
+}
+
+.dropdown-menu {
+	min-width: 250px;
+    color:#0d0101;
+}
+
+.accordion-heading .accordion-toggle, .accordion-inner, .nav-stacked li > a {
+	padding-left:1px;
+    color:#0d0101;
+}
+
+.caret 
+{
+	color:#fff;
+}
+
+.navbar-toggle {
+	color:#f8f0f0;
+    border-width:0;
+}
+  
+.navbar-toggle:hover {
+	background-color:#fff;
+}
+
+.panel {
+	padding-left:27px;
+    padding-right:27px;
+}
+
+.tamaño {
+    
+}
+
+.navbarnegro {
+background-color:#0d0101;
+}
+
+.imagenfon {
+background-image: url("http://fondos-escritorio.org/wallpapers/2012/09/original/fondo-de-windows-7-estilo-verde-brillante-hd-1805.jpg")
+}
+
+.fondoblanco {
+background-color:#ffffff;
+}
+
+.fondogris {
+background-color:#e9e3e3;
+}
+
+.colorv {
+color:#0d0101;
+}
+
+.letrablanca {
+color:#ffffff;
+}
+
+.letraroja {
+    color:#ff3333;
+}
+
+
+
+
+
+.degradado {
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#61c419+100,b4e391+100,b4e391+100 */
+background: #61c419; /* Old browsers */
+background: -moz-linear-gradient(top,  #61c419 100%, #b4e391 100%, #b4e391 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(100%,#61c419), color-stop(100%,#b4e391), color-stop(100%,#b4e391)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #61c419 100%,#b4e391 100%,#b4e391 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #61c419 100%,#b4e391 100%,#b4e391 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #61c419 100%,#b4e391 100%,#b4e391 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #61c419 100%,#b4e391 100%,#b4e391 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61c419', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+
+}
+
+.DEGRADADO2 {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1ffd1+0,ecffc1+0,f8ffe8+99,f8ffe8+100,f8ffe8+100 */
+background: #f1ffd1; /* Old browsers */
+background: -moz-linear-gradient(top,  #f1ffd1 0%, #ecffc1 0%, #f8ffe8 99%, #f8ffe8 100%, #f8ffe8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1ffd1), color-stop(0%,#ecffc1), color-stop(99%,#f8ffe8), color-stop(100%,#f8ffe8), color-stop(100%,#f8ffe8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f1ffd1 0%,#ecffc1 0%,#f8ffe8 99%,#f8ffe8 100%,#f8ffe8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f1ffd1 0%,#ecffc1 0%,#f8ffe8 99%,#f8ffe8 100%,#f8ffe8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f1ffd1 0%,#ecffc1 0%,#f8ffe8 99%,#f8ffe8 100%,#f8ffe8 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f1ffd1 0%,#ecffc1 0%,#f8ffe8 99%,#f8ffe8 100%,#f8ffe8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1ffd1', endColorstr='#f8ffe8',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* end */

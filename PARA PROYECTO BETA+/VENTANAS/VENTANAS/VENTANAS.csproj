@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A363BBCD-9B76-41FD-BDA7-0CCDA1B55121}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VENTANAS</RootNamespace>
+    <AssemblyName>VENTANAS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\..\usb\Componentes Graficos Vb2\Componentes Graficos Vb2\SKIN NET 2010 WIN 7\SkinVS.NET\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\Arbittros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Arbittros.Designer.cs">
+      <DependentUpon>Arbittros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Estadio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Estadio.Designer.cs">
+      <DependentUpon>Estadio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Estadisticas.Designer.cs">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmAsociasion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAsociasion.Designer.cs">
+      <DependentUpon>frmAsociasion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDirectorTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDirectorTecnico.designer.cs">
+      <DependentUpon>frmDirectorTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDueño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDueño.designer.cs">
+      <DependentUpon>frmDueño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmJugador.Designer.cs">
+      <DependentUpon>frmJugador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLigas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLigas.designer.cs">
+      <DependentUpon>frmLigas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNoticias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNoticias.designer.cs">
+      <DependentUpon>frmNoticias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmPartidoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPartidoi.Designer.cs">
+      <DependentUpon>frmPartidoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Goleo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Goleo.Designer.cs">
+      <DependentUpon>Goleo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Goles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Goles.Designer.cs">
+      <DependentUpon>Goles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Insidentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Insidentes.Designer.cs">
+      <DependentUpon>Insidentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Mesadir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Mesadir.Designer.cs">
+      <DependentUpon>Mesadir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NUEVO_EQUIPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NUEVO_EQUIPO.Designer.cs">
+      <DependentUpon>NUEVO_EQUIPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\crComunicadosreports.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crComunicadosreports.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crLigasreports.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crLigasreports.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrystalCredenciales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalCredenciales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmCredenciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmCredenciales.Designer.cs">
+      <DependentUpon>frmCredenciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\puntaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\puntaje.Designer.cs">
+      <DependentUpon>puntaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Temporada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Temporada.Designer.cs">
+      <DependentUpon>Temporada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JugadorCategoria.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JugadorCategoria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JugadorEquipo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JugadorEquipo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProyectoV1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoV1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Jugadores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Jugadores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reortes.cs" />
+    <EmbeddedResource Include="GUI\Arbittros.resx">
+      <DependentUpon>Arbittros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Categorias.resx">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Estadio.resx">
+      <DependentUpon>Estadio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Estadisticas.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAsociasion.resx">
+      <DependentUpon>frmAsociasion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDirectorTecnico.resx">
+      <DependentUpon>frmDirectorTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDueño.resx">
+      <DependentUpon>frmDueño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmJugador.resx">
+      <DependentUpon>frmJugador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLigas.resx">
+      <DependentUpon>frmLigas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNoticias.resx">
+      <DependentUpon>frmNoticias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPartidoi.resx">
+      <DependentUpon>frmPartidoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Goleo.resx">
+      <DependentUpon>Goleo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Goles.resx">
+      <DependentUpon>Goles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Insidentes.resx">
+      <DependentUpon>Insidentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Mesadir.resx">
+      <DependentUpon>Mesadir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NUEVO_EQUIPO.resx">
+      <DependentUpon>NUEVO_EQUIPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crComunicadosreports.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crComunicadosreports.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crLigasreports.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crLigasreports.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrystalCredenciales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalCredenciales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmCredenciales.resx">
+      <DependentUpon>frmCredenciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\puntaje.resx">
+      <DependentUpon>puntaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Temporada.resx">
+      <DependentUpon>Temporada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="JugadorCategoria.xsc">
+      <DependentUpon>JugadorCategoria.xsd</DependentUpon>
+    </None>
+    <None Include="JugadorCategoria.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JugadorCategoria.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JugadorCategoria.xss">
+      <DependentUpon>JugadorCategoria.xsd</DependentUpon>
+    </None>
+    <None Include="JugadorEquipo.xsc">
+      <DependentUpon>JugadorEquipo.xsd</DependentUpon>
+    </None>
+    <None Include="JugadorEquipo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JugadorEquipo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JugadorEquipo.xss">
+      <DependentUpon>JugadorEquipo.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ProyectoV1DataSet.xsc">
+      <DependentUpon>ProyectoV1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoV1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoV1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoV1DataSet.xss">
+      <DependentUpon>ProyectoV1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Jugadores.xsc">
+      <DependentUpon>Jugadores.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Jugadores.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Jugadores.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Jugadores.xss">
+      <DependentUpon>Jugadores.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AFEYAC\Registros\Registros.csproj">
+      <Project>{f1571b4c-73fc-4325-88fe-90c4abd1aaec}</Project>
+      <Name>Registros</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace AFEYAC.GUI
+{
+    public partial class Miembros : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            int x = (int)Session["operacion"];
+
+            if (x == 1)
+            {
+                Panel1.Enabled = true;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,187 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProyectoAFEYAC.master.cs" Inherits="AFEYAC.MassterPage.ProyectoAFEYAC" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+    <link href="../Recursos/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Recursos/css/styles.css" rel="stylesheet" />
+    <script src="../Recursos/js/jquery.min.js"></script>
+    <script src="../Recursos/js/bootstrap.min.js"></script>
+    <script src="../Recursos/js/scripts.js"></script>
+    <link href="../Recursos/css/jquery.fancybox.css" rel="stylesheet" />
+    <script src="../Recursos/js/jquery.fancybox.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="row fondogris">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-10">
+
+
+   
+   <div class="container-fluid">
+    <div class="row">
+       <div class="col-md-12 fondoblanco">
+      <div class="col col-sm-2 fondoblanco"> 
+          <p></p>      
+                  <img width="150" height="110" src="../Recursos/img/308411_289827171058146_585608514_n.jpg"/>  
+          <p></p>
+      </div>
+      <div class="col col-sm-8 fondoblanco">
+       <p></p>
+
+                  <h2>&nbsp; <a title="scroll down for your viewing pleasure">  Asociación De Fútbol Del Estado De Yucatán</a></h2>
+
+
+     
+      </div>
+      <div class="col col-sm-2 fondoblanco">
+       <p></p>
+
+                  <img width="140" height="110" src="../Recursos/img/galeria_b189.jpg"/>  
+
+
+     
+      </div>
+    </div>
+   </div>
+  </div>
+  
+                   
+        <!-- /.navbar -->
+        <div class="navbar-header navbarnegro">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="ejemplo1.aspx" class="navbar-brand" id="brand"><span style="color:#f9f9f9;font-weight:200;">INICIO</span></a>
+        </div>
+        <nav class="collapse navbar-collapse navbarnegro" role="navigation" id="navbar">
+            <ul class="nav navbar-nav">
+                <li class="">               
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menú<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Estadios.aspx">Unidades Deportivas</a></li>
+                    <li><a href="sesion.aspx">Comunicados</a></li>
+                    <li><a href="sesion.aspx" title="All themes are responsive">Credenciales</a></li>                                                 
+                    <li><a href="Estadisticas.aspx">Estadísticas</a></li>
+                    <li><a href="#">Noticias</a></li>    
+                  
+                          
+                  </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Calendario.aspx" rel="nofollow" target="ext">Calendario</a></li>
+                <li><a href="Galeria.aspx" rel="nofollow" target="ext">Galería</a></li>
+                <li><a href="ligas.aspx" rel="nofollow" target="ext">Ligas</a></li>    
+                <li><a href="Registro.aspx" rel="nofollow" target="ext">Proceso de registro</a></li>                           
+                <li><a href="Conocenos.aspx" rel="nofollow" target="ext">Conocenos</a></li>
+                <li><a href="sesion.aspx" rel="nofollow" target="ext">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+     
+
+
+
+ 
+
+<div class="container-fluid degradado">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-2">
+
+                    <p></p>
+                        
+                          <img width="150" height="150" src="http://sipse.com/imgs/092014/280914c376414a2med.jpg"  class="img-thumbnail" />
+                     <p></p>
+
+				</div>
+				<div class="col-md-10">
+                         <p></p>
+                         <p><strong><h2><a href="http://sipse.com/deportes/reeligen-4-anos-mas-al-presidente-de-la-afeyac-114792.html" class="letrablanca">Reeligen 4 años más al presidente de la Afeyac (Mérida)</a></h2></strong></p>
+                         <p class="colorv">Continúa al frente del organismo Manuel Martín Medina; desea contar con selecciones más competitivas. Sin mayores contratiempos ayer fue reelegido para un periodo de cuatro años más al frente de la Asociación de Fútbol del Estado de Yucatán...</p>
+				     
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Begin Body -->
+       
+	   <div class="row">
+         
+  			  
+      		<div class="col col-sm-12">
+              <div class="panel">
+              <h1 class="text-center">
+                  
+                  <asp:ContentPlaceHolder ID="cphTitulo" runat="server"></asp:ContentPlaceHolder>
+
+              </h1>
+              
+           <p>
+        
+              <asp:ContentPlaceHolder ID="cphContenido" runat="server"></asp:ContentPlaceHolder>
+            </p>
+              </div>
+            </div>
+      	</div> 
+ 
+
+
+        <div class="row">
+                <div class="col-md-12">
+                  <div class="text-center alert alert-warning fondoblanco">
+                        <a href="https://www.facebook.com/pages/Asociaci%C3%B3n-De-F%C3%BAtbol-Del-Estado-De-Yucat%C3%A1n-AFEYAC/262111780496352" class="btn btn-social btn-facebook">
+                            <i class="fa fa-facebook"></i>&nbsp; Facebook</a>
+                        <a href="#" class="btn btn-social btn-google">
+                            <i class="fa fa-google-plus"></i>&nbsp; Google</a>
+                        <a href="#" class="btn btn-social btn-twitter">
+                            <i class="fa fa-twitter"></i>&nbsp; Twitter </a>
+                        <a href="#" class="btn btn-social btn-linkedin">
+                            <i class="fa fa-linkedin"></i>&nbsp; Linkedin </a>
+                    </div>
+                    </div>
+              </div>
+
+        <footer class="direc DIREC">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2015 YourCompany | By : <a href="http://www.designbootstrap.com/" target="_blank">DesignBootstrap</a>
+                </div>
+
+            </div>
+        </div>
+      </footer>
+
+
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+		</div>
+	</div>
+
+    </form>
+</body>
+</html>

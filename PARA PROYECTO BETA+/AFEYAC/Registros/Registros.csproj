@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1571B4C-73FC-4325-88FE-90C4ABD1AAEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Registros</RootNamespace>
+    <AssemblyName>Registros</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\AlbitrosBO.cs" />
+    <Compile Include="BO\AsociacionBO.cs" />
+    <Compile Include="BO\CategoriaBO.cs" />
+    <Compile Include="BO\DirectorTecnicoBO.cs" />
+    <Compile Include="BO\DueñoBO.cs" />
+    <Compile Include="BO\EquipoBO.cs" />
+    <Compile Include="BO\EstadioBO.cs" />
+    <Compile Include="BO\EstadisticasBO.cs" />
+    <Compile Include="BO\GoleoBO.cs" />
+    <Compile Include="BO\GolesBO.cs" />
+    <Compile Include="BO\IncidentesBO.cs" />
+    <Compile Include="BO\JugadorBO.cs" />
+    <Compile Include="BO\LigasBO.cs" />
+    <Compile Include="BO\MesaDirecBO.cs" />
+    <Compile Include="BO\NoticiasBO.cs" />
+    <Compile Include="BO\PartidosBO.cs" />
+    <Compile Include="BO\PuntajeBO.cs" />
+    <Compile Include="BO\TemporadaBO.cs" />
+    <Compile Include="DAO\AlbitrosDAO.cs" />
+    <Compile Include="DAO\AsociacionDAO.cs" />
+    <Compile Include="DAO\CategoriaDAO.cs" />
+    <Compile Include="DAO\Conexion.cs" />
+    <Compile Include="DAO\DirectorTecnicoDAO.cs" />
+    <Compile Include="DAO\DueñoDAO.cs" />
+    <Compile Include="DAO\EquipoDAO.cs" />
+    <Compile Include="DAO\EstadioDAO.cs" />
+    <Compile Include="DAO\EstadisticasDAO.cs" />
+    <Compile Include="DAO\GoleoDAO.cs" />
+    <Compile Include="DAO\GolesDAO.cs" />
+    <Compile Include="DAO\IncidentesDAO.cs" />
+    <Compile Include="DAO\JugadorDAO.cs" />
+    <Compile Include="DAO\LigasDAO.cs" />
+    <Compile Include="DAO\MesadirectiDAO.cs" />
+    <Compile Include="DAO\NoticiasDAO.cs" />
+    <Compile Include="DAO\PartidosDAO.cs" />
+    <Compile Include="DAO\PuntageDAO.cs" />
+    <Compile Include="DAO\TemporadaDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AlbitrosCTRL.cs" />
+    <Compile Include="Services\AsociacionCTRL.cs" />
+    <Compile Include="Services\CategoriaCTRL.cs" />
+    <Compile Include="Services\DirectorTecnicoCTRL.cs" />
+    <Compile Include="Services\DueñoCTRL.cs" />
+    <Compile Include="Services\EquipoCTRL.cs" />
+    <Compile Include="Services\EstadioCTRL.cs" />
+    <Compile Include="Services\EstadisticasCTRL.cs" />
+    <Compile Include="Services\GoleoCTRL.cs" />
+    <Compile Include="Services\GolesCTRL.cs" />
+    <Compile Include="Services\IncidentesCTRL.cs" />
+    <Compile Include="Services\JugadorCTRL.cs" />
+    <Compile Include="Services\LigasCTRL.cs" />
+    <Compile Include="Services\MesaDirecCTRL.cs" />
+    <Compile Include="Services\NoticiasCTRL.cs" />
+    <Compile Include="Services\PartidosCTRL.cs" />
+    <Compile Include="Services\PuntajeCTRL.cs" />
+    <Compile Include="Services\TemporadaCTRL.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
